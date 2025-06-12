@@ -7,31 +7,34 @@ $light-gray: #c1c1c1;
 $dark-gray: #333333;
 
 
-$small-font: 14px;
-$medium-font: 22.5px;
-$large-font: 36px;
-$xlarge-font: 59px;
+$s-font: 14px;
+$m-font: 22.5px;
+$l-font: 36px;
+$xl-font: 59px;
+$xxl-font: 96px;
 
-$small-gap: 16px;
-$medium-gap: 24px;
-$large-gap: 32px;
-$xlarge-gap: 40px;
+$xs-gap: 16px;
+$s-gap: 24px;
+$m-gap: 32px;
+$l-gap: 40px;
+$xl-gap: 40px;
+$xxl-gap: 65px;
+$xxl-gap: 105px;
 
-$content-width: 1440px;
+$content-width: 1280px;
 $partition-width: 92px;
 $gap-width: 14px;
 
 
 *{
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: 'Inter', sans-serif;
-  font-size: $small-font;
+
+  font-size: $s-font;
   font-weight: 400;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fdfdfd;
+  color: $fg;
+  font-family: serif;
 }
 
 
