@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
 $primary: #355EF2;
+$primary-dark: #071233;
 $secondary: #F25F35;
 $white: #fdfdfd;
 $black: #000717;
@@ -8,7 +11,7 @@ $dark-gray: #333333;
 
 
 $s-font: 14px;
-$m-font: 22.5px;
+$m-font: 26px;
 $l-font: 36px;
 $xl-font: 59px;
 $xxl-font: 96px;
@@ -35,6 +38,9 @@ $gap-width: 14px;
   font-weight: 400;
   color: $fg;
   font-family: serif;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

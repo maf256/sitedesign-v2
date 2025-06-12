@@ -6,14 +6,14 @@ export default function LandingSection() {
       <div className="landing-content">
         <h1 className="main-title">
           <div className="title-line-one">
-            <span>MAJID</span>
+            <span>Majid</span>
             <Image src="/avatar.jpg" alt="Profile picture" width={96} height={96} />
           </div>
-          <span> ASKARIFARSANGI</span>
+          <span> Askarifarsangi</span>
         </h1>
 
         <p>
-          I am a <span>software</span>  engineer and <span> web </span> developer,<br />I am happy to have a digital chat or meet over a cup of coffee.
+          <span>Software Engineer</span> and <span>Web Developer</span>,<br />I am happy to have a digital chat or meet over a cup of coffee.
         </p>
 
       </div>

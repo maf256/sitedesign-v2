@@ -21,14 +21,28 @@
 
 }
 .landing-content   p {
-  font-size: $l-font; 
+  font-family: serif;
+  font-size: $m-font; 
   color: $black;
   span{
-    font-size: $l-font; 
-    color: $secondary;
+    font-size: $m-font; 
+    font-family: serif;
   }
 
 }
+.title-line-one {
+  gap: $s-gap;
+
+
+}
+.title-line-one img {
+  border: solid 1px $light-gray;
+  border-radius: $xs-gap;
+}
+.landing-content span{
+  font-weight: 600;
+}
+
 .main-title {
   display: flex;
   flex-direction: column;

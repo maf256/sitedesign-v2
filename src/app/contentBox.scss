@@ -1,0 +1,20 @@
+@import "./globals.scss";
+
+.content-box {
+  width: $content-width;
+  min-height: 100vh;
+}
+.content{
+  width: auto;
+
+}
+.inner-content{
+  display: flex;
+  flex-direction: row;
+  font-size: $xxl-font;
+  justify-content: space-between;
+  
+}
+.sidebar-wrapper{
+  height: 100%;
+}

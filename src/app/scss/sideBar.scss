@@ -1,1 +1,12 @@
 @import "../globals.scss";
+nav{
+    background-color: $primary-dark;
+    color: white;
+    width: $xxl-gap;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
