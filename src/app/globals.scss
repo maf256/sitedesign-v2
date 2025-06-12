@@ -1,18 +1,48 @@
-$small-font-size: 1px;
+$primary: #355EF2;
+$secondary: #F25F35;
+$white: #fdfdfd;
+$black: #000717;
+$fg: $black;
+$light-gray: #c1c1c1;
+$dark-gray: #333333;
 
-@mixin small-font-size {
-  font-size: 14px;
+
+$small-font: 14px;
+$medium-font: 22.5px;
+$large-font: 36px;
+$xlarge-font: 59px;
+
+$small-gap: 16px;
+$medium-gap: 24px;
+$large-gap: 32px;
+$xlarge-gap: 40px;
+
+$content-width: 1440px;
+$partition-width: 92px;
+$gap-width: 14px;
+
+
+*{
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  font-size: $small-font;
   font-weight: 400;
   line-height: 1.5;
   color: #333;
+  background-color: #fdfdfd;
 }
 
-.hero {
-  text-align: center;
-  padding: 4rem 0;
 
+@mixin border-radius-s {
+  border: none;
+  border-radius: 10px;
+}
+@mixin border-radius-l {}
+
+.content-box {
   h1 {
-    @include small-font-size;
-    margin-bottom: 1rem;
-  }
+
+}
 }
