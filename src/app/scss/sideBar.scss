@@ -2,11 +2,38 @@
 nav{
     background-color: $primary-dark;
     color: white;
-    width: $xxl-gap;
+    width: $xxxxl;
     height: 100vh;
-    position: fixed;
+    transition: ease-in-out 0.618s;
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-self: flex-end;
+    align-self: center;
+
+}
+nav:hover{
+    width: $xxxxl*1.618;
+
+}
+
+nav ul {
+    height:min-content;
+    width: 100%;
+    list-style: none;
+    align-self: center;
+    text-align: center;
+    li {
+    color: white;
+    text-align: center;
+    opacity: 0.25;
+    }
+    li:hover{
+        opacity: 1;
+        transition: 0.618s;
+    }
+    li:first-child{
+        opacity: 1;
+        color: $primary; 
+    }
+
 }

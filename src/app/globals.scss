@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 $primary: #355EF2;
 $primary-dark: #071233;
 $secondary: #F25F35;
@@ -9,20 +9,15 @@ $fg: $black;
 $light-gray: #c1c1c1;
 $dark-gray: #333333;
 
+$xs: 14.00px;
+$s: 22.65px;
+$m: 29.65px;
+$l: 36.65px;
+$xl: 48.00px;
+$xxl: 59.30px;
+$xxxl: 77.62px;
+$xxxxl: 95.9px;
 
-$s-font: 14px;
-$m-font: 26px;
-$l-font: 36px;
-$xl-font: 59px;
-$xxl-font: 96px;
-
-$xs-gap: 16px;
-$s-gap: 24px;
-$m-gap: 32px;
-$l-gap: 40px;
-$xl-gap: 40px;
-$xxl-gap: 65px;
-$xxl-gap: 105px;
 
 $content-width: 1280px;
 $partition-width: 92px;
@@ -33,8 +28,7 @@ $gap-width: 14px;
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-
-  font-size: $s-font;
+ 
   font-weight: 400;
   color: $fg;
   font-family: serif;

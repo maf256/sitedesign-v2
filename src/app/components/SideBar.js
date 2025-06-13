@@ -4,7 +4,12 @@ export default function SideBar() {
     return (
         <nav>
             <ul>
-                <li>Landing</li>
+                <li>|</li>
+                <li>|</li>
+                <li>|</li>
+                <li>|</li>
+                <li>|</li>
+                <li>|</li>
             </ul>
         </nav>
     )

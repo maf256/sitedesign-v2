@@ -1,11 +1,13 @@
-import '../scss/contact.scss'
+import '../scss/career.scss'
 
-export default function Contact() {
+export default function Booking() {
     return (
+
         <section>
             <h2 className='booking'>
-                Contact
+                Career
             </h2>
         </section>
+
     )
 }
