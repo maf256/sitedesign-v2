@@ -26,14 +26,18 @@ nav ul {
     color: white;
     text-align: center;
     opacity: 0.25;
+    transition: ease-in-out 0.4;
+        &.active {
+        transition: ease-in-out 0.4;
+        color: $primary;
+        opacity: 1;
+        // or background-color: blue; if you want background highlighting
+    }
     }
     li:hover{
         opacity: 1;
         transition: 0.618s;
     }
-    li:first-child{
-        opacity: 1;
-        color: $primary; 
-    }
+
 
 }

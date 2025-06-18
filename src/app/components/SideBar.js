@@ -1,15 +1,19 @@
 import '../scss/sideBar.scss'
 
-export default function SideBar() {
+export default function SideBar({ currentSection }) {
+    const sections = ['intro', 'about', 'career', 'contact'];
+    
     return (
         <nav>
             <ul>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
+                {sections.map((section, index) => (
+                    <li 
+                        key={section}
+                        className={currentSection === section ? 'active' : ''}
+                    >
+                        |
+                    </li>
+                ))}
             </ul>
         </nav>
     )
