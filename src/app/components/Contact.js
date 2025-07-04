@@ -2,8 +2,8 @@ import '../scss/contact.scss'
 
 export default function Contact() {
     return (
-        <section>
-            <h2 className='booking'>
+        <section className='contact' id='contact'>
+            <h2>
                 Contact
             </h2>
         </section>

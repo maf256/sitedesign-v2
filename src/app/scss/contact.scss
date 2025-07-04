@@ -1,4 +1,9 @@
 @import "../globals.scss";
 .contact{
     height: 700px;
+    width: min-content;
+    display: flex;
+    flex: column;
+    align-items: start;
+    justify-content: start;
 }

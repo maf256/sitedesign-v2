@@ -1,4 +1,8 @@
 @import "../globals.scss";
 .about-me{
     height: 700px;
+    width: 100%;
+}
+.about-paragraph{
+    padding-top: $xs;
 }

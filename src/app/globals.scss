@@ -9,6 +9,8 @@ $fg: $black;
 $light-gray: #c1c1c1;
 $dark-gray: #333333;
 
+$xxxs: 5.35px;
+$xxs: 8.65px;
 $xs: 14.00px;
 $s: 22.65px;
 $m: 29.65px;
@@ -37,15 +39,19 @@ $gap-width: 14px;
   font-style: normal;
 }
 
-
-@mixin border-radius-s {
-  border: none;
-  border-radius: 10px;
+h2{
+  width: 100%;
+  font-size: $xxl;
+  padding-top: $l;
 }
-@mixin border-radius-l {}
-
-.content-box {
-  h1 {
-
+p{
+  font-family:  serif;
+  font-size: $s ;
+  opacity: 0.75;
 }
+
+.filler-ribbon > div {
+  will-change: opacity;
+  /* Optionally add position: absolute; and width/height if you want them to overlap perfectly */
 }
+
