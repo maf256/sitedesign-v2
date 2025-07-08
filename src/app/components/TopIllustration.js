@@ -1,4 +1,5 @@
 import React from "react";
+import '../scss/topIllustration.scss'
 
 export default function TopIllustration({ opacity, topOffset, bottomOffset }) {
     // Calculate new path "d" values based on offsets
@@ -28,7 +29,7 @@ export default function TopIllustration({ opacity, topOffset, bottomOffset }) {
                     d={topPath}
                     fill="none"
                     stroke="url(#purpleGradient)"
-                    strokeWidth="0.3"
+                    strokeWidth="0.25"
                     strokeLinecap="square"
                     strokeLinejoin="miter"
                 />

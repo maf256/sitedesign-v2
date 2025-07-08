@@ -1,0 +1,147 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main suitcase body -->
+  <rect x="80" y="120" width="240" height="160" rx="8" ry="8" 
+        fill="none" stroke="#2c3e50" stroke-width="0.25"/>
+  
+  <!-- Suitcase handle -->
+  <path d="M160 120 Q160 100 200 100 Q240 100 240 120" 
+        fill="none" stroke="#34495e" stroke-width="0.25"/>
+  <rect x="190" y="95" width="20" height="8" rx="4" 
+        fill="none" stroke="#34495e" stroke-width="0.25"/>
+  
+  <!-- Suitcase corners and reinforcement -->
+  <circle cx="90" cy="130" r="3" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  <circle cx="310" cy="130" r="3" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  <circle cx="90" cy="270" r="3" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  <circle cx="310" cy="270" r="3" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  
+  <!-- Suitcase divider line -->
+  <line x1="80" y1="200" x2="320" y2="200" stroke="#bdc3c7" stroke-width="0.25"/>
+  
+  <!-- Career symbols inside suitcase -->
+  <!-- Laptop -->
+  <rect x="100" y="140" width="30" height="20" rx="2" 
+        fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <line x1="100" y1="150" x2="130" y2="150" stroke="#3498db" stroke-width="0.25"/>
+  
+  <!-- Documents/Resume -->
+  <rect x="140" y="135" width="20" height="25" 
+        fill="none" stroke="#e74c3c" stroke-width="0.25"/>
+  <line x1="145" y1="140" x2="155" y2="140" stroke="#e74c3c" stroke-width="0.25"/>
+  <line x1="145" y1="145" x2="155" y2="145" stroke="#e74c3c" stroke-width="0.25"/>
+  <line x1="145" y1="150" x2="155" y2="150" stroke="#e74c3c" stroke-width="0.25"/>
+  
+  <!-- Tie -->
+  <path d="M170 135 L175 135 L177 160 L173 160 Z" 
+        fill="none" stroke="#9b59b6" stroke-width="0.25"/>
+  <polygon points="170,135 175,135 172.5,130" 
+           fill="none" stroke="#9b59b6" stroke-width="0.25"/>
+  
+  <!-- Calculator -->
+  <rect x="185" y="140" width="15" height="20" 
+        fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  <circle cx="190" cy="145" r="1" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  <circle cx="195" cy="145" r="1" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  <circle cx="190" cy="150" r="1" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  <circle cx="195" cy="150" r="1" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  
+  <!-- Business cards -->
+  <rect x="210" y="145" width="25" height="15" 
+        fill="none" stroke="#1abc9c" stroke-width="0.25"/>
+  <rect x="212" y="147" width="23" height="13" 
+        fill="none" stroke="#1abc9c" stroke-width="0.25"/>
+  
+  <!-- Coffee cup -->
+  <rect x="245" y="140" width="12" height="15" rx="2" 
+        fill="none" stroke="#8e44ad" stroke-width="0.25"/>
+  <path d="M257 145 Q262 145 262 150 Q262 155 257 155" 
+        fill="none" stroke="#8e44ad" stroke-width="0.25"/>
+  
+  <!-- Notebook -->
+  <rect x="270" y="135" width="20" height="25" 
+        fill="none" stroke="#e67e22" stroke-width="0.25"/>
+  <line x1="270" y1="140" x2="290" y2="140" stroke="#e67e22" stroke-width="0.25"/>
+  <line x1="270" y1="145" x2="290" y2="145" stroke="#e67e22" stroke-width="0.25"/>
+  <line x1="270" y1="150" x2="290" y2="150" stroke="#e67e22" stroke-width="0.25"/>
+  
+  <!-- Bottom section items -->
+  <!-- Briefcase -->
+  <rect x="100" y="220" width="25" height="15" rx="2" 
+        fill="none" stroke="#2c3e50" stroke-width="0.25"/>
+  <line x1="110" y1="220" x2="115" y2="215" stroke="#2c3e50" stroke-width="0.25"/>
+  <line x1="115" y1="215" x2="120" y2="220" stroke="#2c3e50" stroke-width="0.25"/>
+  
+  <!-- Graph/Chart -->
+  <rect x="135" y="210" width="30" height="25" 
+        fill="none" stroke="#27ae60" stroke-width="0.25"/>
+  <polyline points="140,230 145,220 150,225 155,215 160,220" 
+            fill="none" stroke="#27ae60" stroke-width="0.25"/>
+  
+  <!-- ID Badge -->
+  <rect x="175" y="215" width="15" height="20" rx="2" 
+        fill="none" stroke="#f1c40f" stroke-width="0.25"/>
+  <circle cx="182.5" cy="220" r="2" fill="none" stroke="#f1c40f" stroke-width="0.25"/>
+  <line x1="178" y1="227" x2="187" y2="227" stroke="#f1c40f" stroke-width="0.25"/>
+  <line x1="178" y1="230" x2="187" y2="230" stroke="#f1c40f" stroke-width="0.25"/>
+  
+  <!-- Phone -->
+  <rect x="200" y="220" width="12" height="18" rx="3" 
+        fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <circle cx="206" cy="224" r="1" fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <rect x="203" y="232" width="6" height="2" rx="1" 
+        fill="none" stroke="#3498db" stroke-width="0.25"/>
+  
+  <!-- Keys -->
+  <circle cx="225" cy="225" r="3" fill="none" stroke="#95a5a6" stroke-width="0.25"/>
+  <rect x="228" y="223" width="8" height="4" 
+        fill="none" stroke="#95a5a6" stroke-width="0.25"/>
+  
+  <!-- Pen -->
+  <line x1="245" y1="215" x2="245" y2="235" stroke="#e74c3c" stroke-width="0.25"/>
+  <polygon points="245,215 243,220 247,220" 
+           fill="none" stroke="#e74c3c" stroke-width="0.25"/>
+  
+  <!-- Watch -->
+  <circle cx="270" cy="225" r="8" fill="none" stroke="#34495e" stroke-width="0.25"/>
+  <circle cx="270" cy="225" r="6" fill="none" stroke="#34495e" stroke-width="0.25"/>
+  <line x1="270" y1="225" x2="270" y2="220" stroke="#34495e" stroke-width="0.25"/>
+  <line x1="270" y1="225" x2="273" y2="225" stroke="#34495e" stroke-width="0.25"/>
+  
+  <!-- Decorative elements around suitcase -->
+  <!-- Career path arrows -->
+  <path d="M50 200 Q60 190 70 200" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  <polygon points="67,198 72,200 67,202" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  
+  <path d="M330 200 Q340 190 350 200" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  <polygon points="347,198 352,200 347,202" fill="none" stroke="#7f8c8d" stroke-width="0.25"/>
+  
+  <!-- Success indicators -->
+  <polygon points="40,50 45,60 50,50 45,40" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  <polygon points="350,60 355,70 360,60 355,50" fill="none" stroke="#f39c12" stroke-width="0.25"/>
+  
+  <!-- Network connections -->
+  <circle cx="60" cy="100" r="2" fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <circle cx="340" cy="100" r="2" fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <circle cx="60" cy="300" r="2" fill="none" stroke="#3498db" stroke-width="0.25"/>
+  <circle cx="340" cy="300" r="2" fill="none" stroke="#3498db" stroke-width="0.25"/>
+  
+  <line x1="60" y1="100" x2="80" y2="130" stroke="#3498db" stroke-width="0.25" stroke-dasharray="2,2"/>
+  <line x1="340" y1="100" x2="320" y2="130" stroke="#3498db" stroke-width="0.25" stroke-dasharray="2,2"/>
+  <line x1="60" y1="300" x2="80" y2="270" stroke="#3498db" stroke-width="0.25" stroke-dasharray="2,2"/>
+  <line x1="340" y1="300" x2="320" y2="270" stroke="#3498db" stroke-width="0.25" stroke-dasharray="2,2"/>
+  
+  <!-- Geometric pattern details -->
+  <polygon points="30,150 35,155 30,160 25,155" fill="none" stroke="#e67e22" stroke-width="0.25"/>
+  <polygon points="365,150 370,155 365,160 360,155" fill="none" stroke="#e67e22" stroke-width="0.25"/>
+  
+  <!-- Additional maximalist details -->
+  <rect x="85" y="125" width="5" height="2" fill="none" stroke="#bdc3c7" stroke-width="0.25"/>
+  <rect x="310" y="125" width="5" height="2" fill="none" stroke="#bdc3c7" stroke-width="0.25"/>
+  <rect x="85" y="273" width="5" height="2" fill="none" stroke="#bdc3c7" stroke-width="0.25"/>
+  <rect x="310" y="273" width="5" height="2" fill="none" stroke="#bdc3c7" stroke-width="0.25"/>
+  
+  <!-- Suitcase lock -->
+  <rect x="195" y="195" width="10" height="8" rx="1" 
+        fill="none" stroke="#2c3e50" stroke-width="0.25"/>
+  <circle cx="200" cy="199" r="1.5" fill="none" stroke="#2c3e50" stroke-width="0.25"/>
+</svg>
