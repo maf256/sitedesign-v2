@@ -1,9 +1,257 @@
 @import "../globals.scss";
-.contact{
-    height: 700px;
-    width: min-content;
+
+.contact {
+  padding: $xl 0;
+
+  &__container {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 $s;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $l;
+    margin-top: $l;
+  }
+
+  &__section {
+    h3 {
+      font-size: $l;
+      margin-bottom: $s;
+      font-weight: 400;
+      border-bottom: 1px solid $light-gray;
+      padding-bottom: $xs;
+    }
+
+    h4 {
+      font-size: $s;
+      margin-bottom: $xs;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  &__info {
     display: flex;
-    flex: column;
-    align-items: start;
-    justify-content: start;
+    flex-direction: column;
+    gap: $s;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: $xs;
+    padding: $xs 0;
+    border-bottom: 1px solid rgba($light-gray, 0.3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  &__label {
+    display: block;
+    font-size: $xs;
+    opacity: 0.6;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__value {
+    font-size: $s;
+    margin: 0;
+  }
+
+  &__link {
+    color: $primary;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+    margin-top: $s;
+    padding-top: $s;
+    border-top: 1px solid $light-gray;
+
+    &-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #22c55e;
+      flex-shrink: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: $xs;
+    }
+  }
+
+  &__table {
+    border: 1px solid $light-gray;
+  }
+
+  &__row {
+    display: flex;
+    border-bottom: 1px solid rgba($light-gray, 0.3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .contact__label {
+      flex: 1;
+      padding: $xs;
+      background-color: rgba($light-gray, 0.1);
+      border-right: 1px solid rgba($light-gray, 0.3);
+      text-transform: none;
+      letter-spacing: normal;
+      font-size: $xs;
+      opacity: 0.8;
+    }
+
+    .contact__value {
+      flex: 2;
+      padding: $xs;
+      font-size: $xs;
+      margin: 0;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: $xs;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+    padding: $xs $s;
+    border: 1px solid $primary;
+    color: $dark-gray;
+    text-decoration: none;
+    font-size: $xs;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba($primary, 0.05);
+    }
+  }
+
+  &__booking {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+    padding: $xs $s;
+    border: 1px solid $light-gray;
+    color: $fg;
+    font-size: $xs;
+    opacity: 0.8;
+  }
+
+  &__social {
+    margin-top: $s;
+    padding-top: $s;
+    border-top: 1px solid $light-gray;
+  }
+
+  &__social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $xs;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    gap: $xxs;
+    padding: $xxs $xs;
+    border: 1px solid $light-gray;
+    color: $fg;
+    text-decoration: none;
+    font-size: $xxs;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &__social-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  &__map-section {
+    grid-column: 1 / -1;
+  }
+
+  &__map {
+    border: 1px solid $light-gray;
+    overflow: hidden;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  &__booking-section {
+    grid-column: 1 / -1;
+  }
+
+  &__calendar {
+    border: 1px solid $light-gray;
+    overflow: hidden;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__social-grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      flex-direction: column;
+      gap: $xxs;
+    }
+
+    &__icon {
+      align-self: flex-start;
+    }
+  }
 }
