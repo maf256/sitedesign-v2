@@ -1,8 +1,70 @@
 @import "../globals.scss";
-.about-me{
-    height: 700px;
-    width: 100%;
+
+.about-me {
+  min-height: 700px;
+  width: 100%;
+
+  h3 {
+    font-size: $m;
+    padding-top: $m;
+    margin-bottom: $xs;
+    color: $primary-dark;
+  }
 }
-.about-paragraph{
-    padding-top: $xs;
+
+.about-paragraph {
+  padding-top: $xs;
+  margin-bottom: $l;
+}
+
+.personal-details {
+  margin-bottom: $xs;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: $s;
+      opacity: 0.75;
+      padding: 2px 0;
+      position: relative;
+      padding-left: $s;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $primary-dark;
+        font-weight: bold;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.services-overview {
+  margin-bottom: $l;
+
+  p {
+    margin-top: $xs;
+  }
+}
+
+.value-proposition {
+  .cta-text {
+    font-style: italic;
+    color: $dark-gray;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    min-height: auto;
+  }
+
+  .personal-details ul li {
+    padding-left: $xs;
+  }
 }

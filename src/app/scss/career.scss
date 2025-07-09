@@ -1,6 +1,111 @@
-
 @import "../globals.scss";
-.career{
-    height: 700px;
-    width: min-content;
+
+.career {
+  min-height: 600px;
+  width: 100%;
+}
+
+.experience-timeline {
+  margin-top: $xxl;
+  margin-bottom: $l;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: $xl;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 45px;
+    width: 1px;
+    height: $s;
+    background-color: $light-gray;
+  }
+}
+
+.timeline-year {
+  font-size: $s;
+  font-weight: 700;
+  color: $primary;
+  min-width: 80px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    background-color: $primary;
+    border-radius: 50%;
+  }
+}
+
+.timeline-content {
+  margin-left: $xs;
+  flex: 1;
+
+  h3 {
+    font-size: $m;
+    margin-bottom: $xxxs;
+    color: $fg;
+    font-weight: 700;
+  }
+
+  .company {
+    font-size: $s;
+    color: $primary;
+    opacity: 0.9;
+    margin: 0 0 $xxxs 0;
+  }
+
+  .duration {
+    font-size: $xs;
+    color: $dark-gray;
+    opacity: 0.7;
+    margin: 0 0 $xxxs 0;
+  }
+
+  .description {
+    font-size: $s;
+    opacity: 0.75;
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .career {
+    min-height: auto;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    margin-bottom: $xs;
+
+    &:not(:last-child)::after {
+      left: 15px;
+      top: 30px;
+      height: $xs;
+    }
+  }
+
+  .timeline-year {
+    min-width: auto;
+    margin-bottom: $xxxs;
+
+    &::after {
+      right: auto;
+      left: -10px;
+    }
+  }
+
+  .timeline-content {
+    margin-left: 0;
+  }
 }
