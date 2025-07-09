@@ -5,24 +5,23 @@ import AboutMe from "./components/About";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Top from "./components/Top";
+import Experties from "./components/Experties";
 
 import TopIllustrations from "./components/TopIllustration";
-import AboutIllustration from './components/AboutIllustration'
-import CareerIllustration from './components/CareerIllustration';
-import ContactIllustration from './components/ContactIllustration';
+import AboutIllustration from "./components/AboutIllustration";
+import CareerIllustration from "./components/CareerIllustration";
+import ContactIllustration from "./components/ContactIllustration";
 
 import { useState, useEffect, useRef } from "react";
-import FadeMount from './components/FadeMount';
-
+import FadeMount from "./components/FadeMount";
 
 export default function ContnetBox() {
-
   const [opacity, setOpacity] = useState(1);
-  const [topOffset, setTopOffset] = useState(0);     // for top Abstract Lines path
+  const [topOffset, setTopOffset] = useState(0); // for top Abstract Lines path
   const [bottomOffset, setBottomOffset] = useState(0); // for bottom Abstract Lines path
   const contentRef = useRef(null);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [currentSection, setCurrentSection] = useState('top');
+  const [currentSection, setCurrentSection] = useState("top");
 
   //Top Section Scroll Listener
   useEffect(() => {
@@ -50,9 +49,9 @@ export default function ContnetBox() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ['top', 'about', 'career', 'contact'];
+    const sectionIds = ["top", "about", "career", "contact"];
     const handleIntersect = (entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setCurrentSection(entry.target.id);
         }
@@ -62,7 +61,7 @@ export default function ContnetBox() {
       root: contentRef.current,
       threshold: 0.5,
     });
-    sectionIds.forEach(id => {
+    sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -71,33 +70,40 @@ export default function ContnetBox() {
     };
   }, []);
 
-
   return (
     <main className="content-box">
       <div className="inner-content">
-        <div className="content" id="content" ref={contentRef} style={{ overflowY: "auto", maxHeight: "100vh" }}>
+        <div
+          className="content"
+          id="content"
+          ref={contentRef}
+          style={{ overflowY: "auto", maxHeight: "100vh" }}
+        >
           <Top scrollProgress={scrollProgress} />
           <AboutMe />
           <Career />
           <Contact />
+          <Experties />
           {/* <Footer /> */}
         </div>
         <div className="filler-ribbon">
-          <FadeMount show={currentSection === 'top'}>
-            <TopIllustrations opacity={opacity} topOffset={topOffset} bottomOffset={bottomOffset} />
+          <FadeMount show={currentSection === "top"}>
+            <TopIllustrations
+              opacity={opacity}
+              topOffset={topOffset}
+              bottomOffset={bottomOffset}
+            />
           </FadeMount>
-          <FadeMount show={currentSection === 'about'}>
+          <FadeMount show={currentSection === "about"}>
             <AboutIllustration />
           </FadeMount>
-          <FadeMount show={currentSection === 'career'}>
+          <FadeMount show={currentSection === "career"}>
             <CareerIllustration />
           </FadeMount>
-          <FadeMount show={currentSection === 'contact'}>
+          <FadeMount show={currentSection === "contact"}>
             <ContactIllustration />
           </FadeMount>
-          <div>
-
-          </div>
+          <div></div>
         </div>
         <div className="sidebar-wrapper">
           <SideBar currentSection={currentSection} />
@@ -106,5 +112,3 @@ export default function ContnetBox() {
     </main>
   );
 }
-
-

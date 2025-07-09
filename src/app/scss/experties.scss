@@ -1,0 +1,240 @@
+@import "../globals.scss";
+
+.expertise {
+  padding: $xl 0;
+
+  &__container {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 $s;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $l;
+    margin-top: $l;
+  }
+
+  &__skills {
+    h3 {
+      font-size: $l;
+      margin-bottom: $s;
+      font-weight: 400;
+      border-bottom: 1px solid $light-gray;
+      padding-bottom: $xs;
+    }
+  }
+
+  &__skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $s;
+  }
+
+  &__skill-category {
+    border: 1px solid $light-gray;
+    padding: $s;
+  }
+
+  &__skill-header {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+    margin-bottom: $s;
+    padding-bottom: $xs;
+    border-bottom: 1px solid rgba($light-gray, 0.3);
+
+    h4 {
+      font-size: $s;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  &__skill-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  &__skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $xxs;
+  }
+
+  &__skill-item {
+    font-size: $xs;
+    padding: $xxxs $xxs;
+    border: 1px solid rgba($light-gray, 0.5);
+    background-color: rgba($light-gray, 0.05);
+    color: $fg;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+      opacity: 1;
+    }
+  }
+
+  &__education {
+    h3 {
+      font-size: $l;
+      margin-bottom: $s;
+      font-weight: 400;
+      border-bottom: 1px solid $light-gray;
+      padding-bottom: $xs;
+    }
+  }
+
+  &__education-header {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+    margin-bottom: $s;
+  }
+
+  &__education-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  &__timeline {
+    position: relative;
+    padding-left: $s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: $light-gray;
+    }
+  }
+
+  &__timeline-item {
+    position: relative;
+    margin-bottom: $s;
+    padding-left: $s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--degree {
+      .expertise__timeline-marker {
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+
+    &--course {
+      .expertise__timeline-marker {
+        background-color: $secondary;
+        border-color: $secondary;
+      }
+    }
+  }
+
+  &__timeline-marker {
+    position: absolute;
+    left: -$s;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $light-gray;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  &__timeline-content {
+    border: 1px solid $light-gray;
+    padding: $xs;
+    background-color: rgba($light-gray, 0.02);
+  }
+
+  &__timeline-period {
+    display: flex;
+    align-items: center;
+    gap: $xxxs;
+    margin-bottom: $xxxs;
+
+    span {
+      font-size: $xxs;
+      opacity: 0.6;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__timeline-calendar {
+    width: 12px;
+    height: 12px;
+    opacity: 0.5;
+    flex-shrink: 0;
+  }
+
+  &__timeline-degree {
+    font-size: $xs;
+    font-weight: 400;
+    margin: 0 0 $xxxs 0;
+    color: $fg;
+  }
+
+  &__timeline-institution {
+    font-size: $xxs;
+    margin: 0;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1024px) {
+  .expertise {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise {
+    &__skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__skill-category {
+      padding: $xs;
+    }
+
+    &__skill-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $xxxs;
+    }
+
+    &__timeline {
+      padding-left: $xs;
+    }
+
+    &__timeline-item {
+      padding-left: $xs;
+    }
+
+    &__timeline-marker {
+      left: -$xs;
+    }
+  }
+}
