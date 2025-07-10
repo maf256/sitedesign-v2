@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 $primary: #355ef2;
 $primary-dark: #071233;
 $secondary: #f25f35;
@@ -31,19 +31,37 @@ $gap-width: 14px;
 
   font-weight: 400;
   color: $fg;
-  font-family: serif;
-  font-family: "Old Standard TT", serif;
+  font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: normal;
 }
 
+h1 {
+  font-family: "Old Standard TT", serif;
+  span {
+    font-family: "Old Standard TT", serif;
+  }
+}
+
 h2 {
+  font-family: "Old Standard TT", serif;
   width: 100%;
   font-size: $xxl;
   padding-top: $l;
+  font-weight: 700;
 }
 p {
-  font-family: serif;
+  font-family:  serif;
   font-size: $s;
   opacity: 0.75;
+  font-weight: 200;
+}
+h3 {
+  font-family: "Old Standard TT", serif;
+  font-size: $l;
+  font-weight: 600;
+  margin-bottom: $xs;
+}
+section{
+  margin-top: $xxxl;
 }

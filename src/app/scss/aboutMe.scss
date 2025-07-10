@@ -5,10 +5,9 @@
   width: 100%;
 
   h3 {
-    font-size: $m;
-    padding-top: $m;
-    margin-bottom: $xs;
+
     color: $primary-dark;
+    padding-top:$xxl;
   }
 }
 
@@ -18,7 +17,7 @@
 }
 
 .personal-details {
-  margin-bottom: $xs;
+  margin-bottom: $xxxs;
 
   ul {
     list-style: none;
@@ -46,9 +45,6 @@
 .services-overview {
   margin-bottom: $l;
 
-  p {
-    margin-top: $xs;
-  }
 }
 
 .value-proposition {

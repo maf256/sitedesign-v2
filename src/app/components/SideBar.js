@@ -1,7 +1,7 @@
 import '../scss/sideBar.scss'
 
 export default function SideBar({ currentSection }) {
-    const sections = ['top', 'about', 'career', 'contact'];
+    const sections = ['top', 'about', 'expertise', 'career', 'contact'];
 
     return (
         <nav>

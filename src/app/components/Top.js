@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../scss/landingSection.scss";
+import "../scss/top.scss";
 import { useState, useEffect } from "react";
 
 

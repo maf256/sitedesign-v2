@@ -12,6 +12,7 @@
 
 .timeline-item {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: $xl;
   position: relative;
@@ -34,21 +35,11 @@
   min-width: 80px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: 5px;
-    width: 6px;
-    height: 6px;
-    background-color: $primary;
-    border-radius: 50%;
-  }
+
 }
 
 .timeline-content {
-  margin-left: $xs;
-  flex: 1;
+  margin-left: $xs;  flex: 1;
 
   h3 {
     font-size: $m;
@@ -72,7 +63,7 @@
   }
 
   .description {
-    font-size: $s;
+    font-size: 14px !important;
     opacity: 0.75;
     margin: 0;
     line-height: 1.4;

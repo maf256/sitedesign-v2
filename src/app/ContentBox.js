@@ -5,10 +5,11 @@ import AboutMe from "./components/About";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Top from "./components/Top";
-import Experties from "./components/Experties";
+import Expertise from "./components/Expertise";
 
 import TopIllustrations from "./components/TopIllustration";
 import AboutIllustration from "./components/AboutIllustration";
+import ExpertiseIllustration from "./components/ExpertiseIllustration";
 import CareerIllustration from "./components/CareerIllustration";
 import ContactIllustration from "./components/ContactIllustration";
 
@@ -49,11 +50,12 @@ export default function ContnetBox() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ["top", "about", "career", "contact"];
+    const sectionIds = ["top", "about", "expertise", "career", "contact"];
     const handleIntersect = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setCurrentSection(entry.target.id);
+          console.log(entry.target.id)
         }
       });
     };
@@ -81,9 +83,9 @@ export default function ContnetBox() {
         >
           <Top scrollProgress={scrollProgress} />
           <AboutMe />
+          <Expertise />
           <Career />
           <Contact />
-          <Experties />
           {/* <Footer /> */}
         </div>
         <div className="filler-ribbon">
@@ -93,6 +95,9 @@ export default function ContnetBox() {
               topOffset={topOffset}
               bottomOffset={bottomOffset}
             />
+          </FadeMount>
+          <FadeMount show={currentSection === "expertise"}>
+            <ExpertiseIllustration />
           </FadeMount>
           <FadeMount show={currentSection === "about"}>
             <AboutIllustration />

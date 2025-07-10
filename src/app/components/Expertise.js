@@ -1,14 +1,36 @@
+import { useState, useEffect } from "react";
+import "../scss/expertise.scss";
 import {
+  GraduationCap,
+  Calendar,
   Code,
   Database,
   Users,
   Settings,
-  GraduationCap,
-  Calendar,
 } from "lucide-react";
-import "../scss/experties.scss";
 
-const Expertise = () => {
+export default function Expertise() {
+  return (
+    <div id="expertise">
+      <div>
+        Expertise
+      </div>
+      <br />
+      <div>
+        Expertise
+      </div>
+      <br />
+      <div>
+        Expertise
+      </div>
+      <br />
+      <div>
+        Expertise
+      </div></div>
+  )
+}
+/*
+export default function Expertise() {
   const skillCategories = [
     {
       title: "Frontend Development",
@@ -131,7 +153,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="expertise">
+    <section className="expertise" id="expertise">
       <div className="expertise__container">
         <h2>Expertise</h2>
 
@@ -156,35 +178,34 @@ const Expertise = () => {
               ))}
             </div>
           </div>
+        </div>
+        <div className="expertise__education">
+          <div className="expertise__education-header">
+            <GraduationCap className="expertise__education-icon" />
+            <h3>Education</h3>
+          </div>
 
-          <div className="expertise__education">
-            <div className="expertise__education-header">
-              <GraduationCap className="expertise__education-icon" />
-              <h3>Education</h3>
-            </div>
-
-            <div className="expertise__timeline">
-              {education.map((item, index) => (
-                <div
-                  key={index}
-                  className={`expertise__timeline-item expertise__timeline-item--${item.type}`}
-                >
-                  <div className="expertise__timeline-marker"></div>
-                  <div className="expertise__timeline-content">
-                    <div className="expertise__timeline-period">
-                      <Calendar className="expertise__timeline-calendar" />
-                      <span>{item.period}</span>
-                    </div>
-                    <h5 className="expertise__timeline-degree">
-                      {item.degree}
-                    </h5>
-                    <p className="expertise__timeline-institution">
-                      {item.institution}
-                    </p>
+          <div className="expertise__timeline">
+            {education.map((item, index) => (
+              <div
+                key={index}
+                className={`expertise__timeline-item expertise__timeline-item--${item.type}`}
+              >
+                <div className="expertise__timeline-marker"></div>
+                <div className="expertise__timeline-content">
+                  <div className="expertise__timeline-period">
+                    <Calendar className="expertise__timeline-calendar" />
+                    <span>{item.period}</span>
                   </div>
+                  <h5 className="expertise__timeline-degree">
+                    {item.degree}
+                  </h5>
+                  <p className="expertise__timeline-institution">
+                    {item.institution}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -192,4 +213,5 @@ const Expertise = () => {
   );
 };
 
-export default Expertise;
+
+*/

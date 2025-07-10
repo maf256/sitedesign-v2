@@ -29,7 +29,7 @@ const Contact = () => {
 
   const personalInfo = [
     { label: "Birthday", value: "30.03.1983" },
-    { label: "Age", value: "41" },
+
     { label: "Nationality", value: "Iran" },
     { label: "Study", value: "Azad University of Iran" },
     { label: "Degree", value: "Master" },
@@ -92,6 +92,7 @@ const Contact = () => {
           </div>
 
           <div className="contact__section">
+
             <h3>Resources</h3>
             <div className="contact__actions">
               <a
@@ -107,24 +108,26 @@ const Contact = () => {
                 <ScrollText className="contact__icon" />
                 <span>View Licences</span>
               </div>
-            </div>
 
-            <div className="contact__social">
-              <h4>Connect</h4>
-              <div className="contact__social-grid">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.url}
-                    className="contact__social-link"
-                  >
-                    <social.icon className="contact__social-icon" />
-                    <span>{social.name}</span>
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
+          <div className="contact_connect">
+            <h3>Connect</h3>
+            <div className="contact__social-grid">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  className="contact__social-link"
+                >
+                  <social.icon className="contact__social-icon" />
+                  <span>{social.name}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+
 
           <div className="contact__section contact__map-section">
             <h3>Location</h3>

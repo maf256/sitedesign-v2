@@ -31,13 +31,7 @@ export default function AboutMe() {
         </p>
       </div>
 
-      <div className="value-proposition">
-        <p className="cta-text">
-          Currently available for work. I'm based in Sandvika, Norway, and happy
-          to meet in person or have a digital chat to discuss your software
-          development needs.
-        </p>
-      </div>
+
     </section>
   );
 }
