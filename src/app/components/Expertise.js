@@ -1,91 +1,29 @@
 import "../scss/expertise.scss";
 import { Code, Database, Users, Settings } from "lucide-react";
+import content from "../../locales/en.json";
 
 export default function Expertise() {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      icon: Code,
-      skills: [
-        "React",
-        "JavaScript",
-        "Next.js",
-        "TypeScript",
-        "HTML5",
-        "CSS3",
-        "Styled-components",
-        "Material UI",
-        "Bootstrap",
-        "Tailwind CSS",
-        "SASS",
-        "React Query",
-        "Axios",
-        "Vite",
-        "Figma",
-      ],
-    },
-    {
-      title: "Backend Development",
-      icon: Database,
-      skills: [
-        "Node.js",
-        "Express.js",
-        "Nest.js",
-        "Kotlin",
-        "PostgreSQL",
-        "MongoDB",
-        "Spring Boot",
-        "JWT Authentication",
-        "REST APIs",
-        "Webhooks",
-        "Document Store",
-        "C++",
-        "SQL Server",
-        "MySQL",
-      ],
-    },
-    {
-      title: "Soft Skills",
-      icon: Users,
-      skills: [
-        "Problem-solving",
-        "Communication",
-        "Adaptability",
-        "Time Management",
-        "Teamwork",
-        "Attention to Detail",
-        "Work Ethic",
-        "Creativity",
-        "Leadership",
-        "Interpersonal Skills",
-      ],
-    },
-    {
-      title: "Tools & Technologies",
-      icon: Settings,
-      skills: [
-        "Git",
-        "Docker",
-        "Azure",
-        "Vim",
-        "Netlify",
-        "Jira",
-        "WordPress",
-        "Shopify",
-        "WCAG",
-        "SEO",
-      ],
-    },
-  ];
+  const { expertise } = content;
+
+  const iconMap = {
+    "Frontend Development": Code,
+    "Backend Development": Database,
+    "Soft Skills": Users,
+    "Tools & Technologies": Settings,
+  };
+
+  const skillCategories = expertise.skillCategories.map((category) => ({
+    ...category,
+    icon: iconMap[category.title],
+  }));
 
   return (
     <section className="expertise" id="expertise">
       <div className="expertise__container">
-        <h2>Expertise</h2>
-
+        <h2>{expertise.title}</h2>
         <div className="expertise__grid">
           <div className="expertise__skills">
-            <h3>Technical Skills</h3>
+            <h3>{expertise.technicalSkills}</h3>
             <div className="expertise__skills-grid">
               {skillCategories.map((category, index) => (
                 <div key={index} className="expertise__skill-category">
@@ -109,4 +47,3 @@ export default function Expertise() {
     </section>
   );
 }
-

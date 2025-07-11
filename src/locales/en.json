@@ -1,0 +1,98 @@
+{
+  "landingSection": {
+    "description": {
+      "role1": "Software Engineer",
+      "role2": "Web Developer",
+      "text": "I'm happy to have a digital chat or meet over a cup of coffee."
+    }
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "paragraph": "I am an experienced web developer who is passionate about innovative and user-friendly web design with front-end and back-end development expertise. I create modern, responsive websites that engage visitors and strengthen your business's digital profile.",
+    "personalDetails": [
+      "I'm 41 years old",
+      "I'm a hardworking freelancer",
+      "I was born in Iran, currently I live in Norway",
+      "I like playing football"
+    ],
+    "servicesOverview": {
+      "title": "What I Do",
+      "description": "I specialize in full-stack web development using React.js, Next.js, Node.js, and PostgreSQL. I've worked with companies like Konsulenthus Oslo, TechPros Oslo, and Osloweb Sandvika, building everything from business websites to complex web applications."
+    }
+  },
+  "expertise": {
+    "title": "Expertise",
+    "technicalSkills": "Technical Skills",
+    "skillCategories": [
+      {
+        "title": "Frontend Development",
+        "skills": [
+          "React",
+          "JavaScript",
+          "Next.js",
+          "TypeScript",
+          "HTML5",
+          "CSS3",
+          "Styled-components",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind CSS",
+          "SASS",
+          "React Query",
+          "Axios",
+          "Vite",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Backend Development",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Nest.js",
+          "Kotlin",
+          "PostgreSQL",
+          "MongoDB",
+          "Spring Boot",
+          "JWT Authentication",
+          "REST APIs",
+          "Webhooks",
+          "Document Store",
+          "C++",
+          "SQL Server",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Soft Skills",
+        "skills": [
+          "Problem-solving",
+          "Communication",
+          "Adaptability",
+          "Time Management",
+          "Teamwork",
+          "Attention to Detail",
+          "Work Ethic",
+          "Creativity",
+          "Leadership",
+          "Interpersonal Skills"
+        ]
+      },
+      {
+        "title": "Tools & Technologies",
+        "skills": [
+          "Git",
+          "Docker",
+          "Azure",
+          "Vim",
+          "Netlify",
+          "Jira",
+          "WordPress",
+          "Shopify",
+          "WCAG",
+          "SEO"
+        ]
+      }
+    ]
+  }
+}
