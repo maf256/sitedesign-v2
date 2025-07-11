@@ -16,16 +16,6 @@
   align-items: flex-start;
   margin-bottom: $xl;
   position: relative;
-
-  &:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 70px;
-    top: 45px;
-    width: 1px;
-    height: $s;
-    background-color: $light-gray;
-  }
 }
 
 .timeline-year {
@@ -34,12 +24,11 @@
   color: $primary;
   min-width: 80px;
   position: relative;
-
-
 }
 
 .timeline-content {
-  margin-left: $xs;  flex: 1;
+  margin-left: $xs;
+  flex: 1;
 
   h3 {
     font-size: $m;
