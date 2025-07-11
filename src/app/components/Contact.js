@@ -28,20 +28,27 @@ const Contact = () => {
   ];
 
   const personalInfo = [
-    { label: "Birthday", value: "30.03.1983" },
+    { label: "Age", value: "41" },
 
     { label: "Nationality", value: "Iran" },
     { label: "Study", value: "Azad University of Iran" },
     { label: "Degree", value: "Master" },
-    { label: "Interest", value: "Playing Football" },
     { label: "Freelance", value: "Available" },
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, url: "#" },
-    { name: "GitHub", icon: Github, url: "#" },
-    { name: "Telegram", icon: MessageCircle, url: "#" },
-    { name: "WhatsApp", icon: MessageCircle, url: "#" },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/farsangi",
+    },
+    { name: "GitHub", icon: Github, url: "https://github.com/maf256" },
+    { name: "Phone", icon: Phone, url: "tel:+4740189111" },
+    {
+      name: "WhatsApp",
+      icon: MessageCircle,
+      url: "https://api.whatsapp.com/send/?phone=%2B4740189111&text&type=phone_number&app_absent=0",
+    },
   ];
 
   return (
@@ -92,11 +99,10 @@ const Contact = () => {
           </div>
 
           <div className="contact__section">
-
             <h3>Resources</h3>
             <div className="contact__actions">
               <a
-                href="https://drive.google.com/file/d/16mcFEdkJsKGzgJz8qYFYqSzcvA5bDWkr/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-WdloD7z_Y7TRNyC0zWIMPefDYLFt2Ki/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__button"
@@ -108,7 +114,6 @@ const Contact = () => {
                 <ScrollText className="contact__icon" />
                 <span>View Licences</span>
               </div>
-
             </div>
           </div>
           <div className="contact_connect">
@@ -118,16 +123,16 @@ const Contact = () => {
                 <a
                   key={index}
                   href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="contact__social-link"
                 >
                   <social.icon className="contact__social-icon" />
-                  <span>{social.name}</span>
+                  <span className="contact__social-name">{social.name}</span>
                 </a>
               ))}
             </div>
           </div>
-
-
 
           <div className="contact__section contact__map-section">
             <h3>Location</h3>

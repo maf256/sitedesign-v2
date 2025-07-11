@@ -204,6 +204,10 @@
     height: 14px;
     flex-shrink: 0;
   }
+  &__social-name {
+    color: $fg;
+    font-size: 18px;
+  }
 
   &__map-section {
     grid-column: 1 / -1;
@@ -256,10 +260,11 @@
     }
   }
 }
-.contact_resources{
+.contact_resources {
   width: 50%;
 }
 
-.contact_connect{
+.contact_connect {
   width: 100%;
 }
+
