@@ -7,6 +7,7 @@ export default function Career() {
   return (
     <section className="career" id="career">
       <h2>{career.title}</h2>
+      <p>{career.description}</p>
       <div className="experience-timeline">
         {career.experiences.map((experience, index) => (
           <div key={index} className="timeline-item">

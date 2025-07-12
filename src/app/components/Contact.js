@@ -125,7 +125,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact_connect">
-            <h3>{contact.sections.connect.title}</h3>
+            <h3 className="contact-connect-title">{contact.sections.connect.title}</h3>
             <div className="contact__social-grid">
               {socialLinks.map((social, index) => (
                 <a

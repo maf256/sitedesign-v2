@@ -39,7 +39,7 @@
 
   .company {
     font-size: $s;
-    color: $primary;
+    color: $dark-gray;
     opacity: 0.9;
     margin: 0 0 $xxxs 0;
   }
@@ -52,7 +52,7 @@
   }
 
   .description {
-    font-size: 14px !important;
+    font-size: $xs !important;
     opacity: 0.75;
     margin: 0;
     line-height: 1.4;

@@ -49,6 +49,7 @@ h2 {
   font-size: $xxl;
   padding-top: $l;
   font-weight: 700;
+  margin-left: -3px;
 }
 p {
   font-family:  serif;
@@ -59,7 +60,7 @@ p {
 h3 {
   font-family: "Old Standard TT", serif;
   font-size: $l;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin-bottom: $xs;
 }
 section{

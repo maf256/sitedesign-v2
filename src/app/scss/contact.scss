@@ -148,7 +148,7 @@
     align-items: center;
     gap: $xs;
     padding: $xs $s;
-    border: 1px solid $primary;
+    border: 1px solid $light-gray;
     color: $dark-gray;
     text-decoration: none;
     font-size: $xs;
@@ -177,6 +177,8 @@
   }
 
   &__social-grid {
+    border-top: solid 1px $light-gray ;
+    padding-top: $s;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $xs;
@@ -192,6 +194,7 @@
     text-decoration: none;
     font-size: $xxs;
     transition: all 0.2s ease;
+    height: $xl;
 
     &:hover {
       border-color: $primary;
@@ -206,7 +209,7 @@
   }
   &__social-name {
     color: $fg;
-    font-size: 18px;
+    font-size: $xs;
   }
 
   &__map-section {
@@ -267,4 +270,9 @@
 .contact_connect {
   width: 100%;
 }
-
+.contact-connect-title{
+  font-family: "Old Standard TT", serif;
+  font-size: $l;
+  font-weight: 600;
+  margin-bottom: $xs;
+}

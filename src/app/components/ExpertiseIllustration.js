@@ -21,12 +21,6 @@ const education = [
         type: "degree",
     },
     {
-        period: "2001 - 2004",
-        degree: "Associate in Computer Science",
-        institution: "AZAD University of IRAN",
-        type: "degree",
-    },
-    {
         period: "2024",
         degree: "Kotlin for Beginners",
         institution: "Udemy",
@@ -55,7 +49,7 @@ const education = [
 export default function ExpertiseIllustration() {
     return (
         <div className="expertise__education">
-
+            <h3>Education</h3>
             <div className="expertise__timeline">
                 {education.map((item, index) => (
                     <div
@@ -81,4 +75,5 @@ export default function ExpertiseIllustration() {
         </div>
     )
 }
+
 

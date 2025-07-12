@@ -131,15 +131,15 @@
 
     &--degree {
       .expertise__timeline-marker {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $secondary;
+        border-color: $secondary;
       }
     }
 
     &--course {
       .expertise__timeline-marker {
-        background-color: $secondary;
-        border-color: $secondary;
+        background-color: $primary;
+        border-color: $primary;
       }
     }
   }
@@ -238,3 +238,4 @@
     }
   }
 }
+

@@ -10,10 +10,9 @@
     "title": "About Me",
     "paragraph": "I am an experienced web developer who is passionate about innovative and user-friendly web design with front-end and back-end development expertise. I create modern, responsive websites that engage visitors and strengthen your business's digital profile.",
     "personalDetails": [
-      "I'm 41 years old",
-      "I'm a hardworking freelancer",
-      "I was born in Iran, currently I live in Norway",
-      "I like playing football"
+     "I'm 41 years old",
+      "I have a genuine enthusiasm for exploring new technologies",      
+      "In my free time, I enjoy playing football"
     ],
     "servicesOverview": {
       "title": "What I Do",
@@ -22,6 +21,7 @@
   },
   "expertise": {
     "title": "Expertise",
+    "description": " I enjoy solving complex problems, collaborating with teams, and bringing creative solutions to life. My toolkit also includes design tools, cloud platforms, and a strong set of soft skills that help me adapt and lead in any project.",
     "technicalSkills": "Technical Skills",
     "skillCategories": [
       {
@@ -97,6 +97,7 @@
   },
   "career": {
     "title": "Career",
+    "description": "Over the years, I've enjoyed building AI tools and large digital platforms with React and JavaScript, always looking for new challenges and ways to create real impact with my teams.",
     "experiences": [
       {
         "year": "2025",

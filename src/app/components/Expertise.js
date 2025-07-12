@@ -21,6 +21,7 @@ export default function Expertise() {
     <section className="expertise" id="expertise">
       <div className="expertise__container">
         <h2>{expertise.title}</h2>
+        <p>{expertise.description}</p>
         <div className="expertise__grid">
           <div className="expertise__skills">
             <h3>{expertise.technicalSkills}</h3>
