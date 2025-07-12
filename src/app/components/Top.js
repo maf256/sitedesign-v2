@@ -20,7 +20,7 @@ export default function LandingSection({ scrollProgress = 0 }) {
           <span className="title-line-one">Majid</span>
           <span className="avatar">
             <Image
-              src="/avatar.jpg"
+              src="/avatar.png"
               alt="Profile picture"
               width={96}
               height={96}
