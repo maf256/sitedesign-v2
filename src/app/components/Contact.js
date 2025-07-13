@@ -9,7 +9,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import "../scss/contact.scss";
-import content from "../../locales/en.json";
+import content from "../../locales/no.json";
 
 const Contact = () => {
   const { contact } = content;
@@ -125,7 +125,9 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact_connect">
-            <h3 className="contact-connect-title">{contact.sections.connect.title}</h3>
+            <h3 className="contact-connect-title">
+              {contact.sections.connect.title}
+            </h3>
             <div className="contact__social-grid">
               {socialLinks.map((social, index) => (
                 <a

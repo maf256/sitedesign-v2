@@ -1,5 +1,5 @@
 import "../scss/aboutMe.scss";
-import content from "../../locales/en.json";
+import content from "../../locales/no.json";
 
 export default function AboutMe() {
   const { aboutMe } = content;

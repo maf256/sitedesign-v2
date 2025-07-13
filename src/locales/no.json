@@ -1,0 +1,217 @@
+{
+  "landingSection": {
+    "description": {
+      "role1": "Programvareutvikler",
+      "role2": "Webutvikler",
+      "text": "Jeg blir glad for en digital prat eller å møtes over en kopp kaffe."
+    }
+  },
+  "aboutMe": {
+    "title": "Om Meg",
+    "paragraph": "Jeg er en erfaren webutvikler som liker innovative og brukervennlige nettsider. Jeg jobber med både front-end og back-end. Jeg lager moderne, responsive nettsider som engasjerer besøkende og styrker den digitale profilen til din bedrift.",
+    "personalDetails": [
+      "Jeg er 41 år gammel",
+      "Jeg liker å utforske ny teknologi",
+      "På fritiden liker jeg å spille fotball"
+    ],
+    "servicesOverview": {
+      "title": "Hva Jeg Gjør",
+      "description": "Jeg jobber med fullstack webutvikling med React.js, Next.js, Node.js og PostgreSQL. Jeg har jobbet med selskaper som Konsulenthus Oslo, TechPros Oslo og Osloweb Sandvika, og laget alt fra nettsider til avanserte webapplikasjoner."
+    }
+  },
+  "expertise": {
+    "title": "Kompetanse",
+    "description": "Jeg liker å løse vanskelige problemer, samarbeide med andre og lage kreative løsninger. Jeg bruker også designverktøy, skyplattformer og har gode myke ferdigheter som hjelper meg å jobbe godt i prosjekter.",
+    "technicalSkills": "Tekniske Ferdigheter",
+    "skillCategories": [
+      {
+        "title": "Frontend Utvikling",
+        "skills": [
+          "React",
+          "JavaScript",
+          "Next.js",
+          "TypeScript",
+          "HTML5",
+          "CSS3",
+          "Styled-components",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind CSS",
+          "SASS",
+          "React Query",
+          "Axios",
+          "Vite",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Backend Utvikling",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Nest.js",
+          "Kotlin",
+          "PostgreSQL",
+          "MongoDB",
+          "Spring Boot",
+          "JWT Autentisering",
+          "REST API-er",
+          "Webhooks",
+          "Dokumentlager",
+          "C++",
+          "SQL Server",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Myke Ferdigheter",
+        "skills": [
+          "Problemløsning",
+          "Kommunikasjon",
+          "Tilpasningsevne",
+          "Tidsstyring",
+          "Teamarbeid",
+          "Detaljfokus",
+          "Arbeidsmoral",
+          "Kreativitet",
+          "Lederskap",
+          "Sosiale Ferdigheter"
+        ]
+      },
+      {
+        "title": "Verktøy og Teknologi",
+        "skills": [
+          "Git",
+          "Docker",
+          "Azure",
+          "Vim",
+          "Netlify",
+          "Jira",
+          "WordPress",
+          "Shopify",
+          "WCAG",
+          "SEO"
+        ]
+      }
+    ]
+  },
+  "career": {
+    "title": "Karriere",
+    "description": "Gjennom årene har jeg laget AI-verktøy og store digitale plattformer med React og JavaScript. Jeg liker nye utfordringer og å lage løsninger som gir ekte verdi i team.",
+    "experiences": [
+      {
+        "year": "2025",
+        "position": "React Utvikler",
+        "company": "MERCOR – San Francisco, USA",
+        "duration": "01.2025 - nåværende",
+        "description": "AI-trening, problemløsning, prompt engineering med React, JavaScript, CSS, Tailwind"
+      },
+      {
+        "year": "2024",
+        "position": "Programvareutvikler",
+        "company": "CELESTE – San Francisco, USA",
+        "duration": "04.2024 - 09.2024",
+        "description": "Bygget AI-treningssystemer, laget løsninger for prompt engineering, laget AI-grensesnitt"
+      },
+      {
+        "year": "2024",
+        "position": "Opplæring i Teknisk Prosjektledelse",
+        "company": "Bærum kommune – Norge",
+        "duration": "02.2024 - 05.2024",
+        "description": "Ledet digitaliseringsprosjekt, jobbet med IT-modernisering i kommunen"
+      },
+      {
+        "year": "2022",
+        "position": "Fullstack Utvikler",
+        "company": "TECHPROS AS – Oslo, Norge",
+        "duration": "04.2022 - 05.2022",
+        "description": "Laget automatiseringssystem for økonomi, bygget React-dashboard med Node.js/PostgreSQL"
+      },
+      {
+        "year": "2009",
+        "position": "Webutvikler",
+        "company": "Teherans kommune – Iran",
+        "duration": "01.2009 - 01.2020",
+        "description": "Lagde store digitale plattformer for over 50 000 brukere daglig, forbedret tilgjengelighet for offentlige tjenester med 60%"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "sections": {
+      "getInTouch": {
+        "title": "Ta Kontakt",
+        "contactInfo": [
+          {
+            "label": "Adresse",
+            "value": "1338 Sandvika Norge"
+          },
+          {
+            "label": "Telefon",
+            "value": "+47 40189111"
+          },
+          {
+            "label": "E-post",
+            "value": "majid@sitedesign.no"
+          }
+        ],
+        "status": "Tilgjengelig for frilansprosjekter"
+      },
+      "about": {
+        "title": "Om",
+        "personalInfo": [
+          {
+            "label": "Alder",
+            "value": "41"
+          },
+          {
+            "label": "Nasjonalitet",
+            "value": "Iran"
+          },
+          {
+            "label": "Studie",
+            "value": "Azad Universitetet i Iran"
+          },
+          {
+            "label": "Grad",
+            "value": "Master"
+          },
+          {
+            "label": "Frilans",
+            "value": "Tilgjengelig"
+          }
+        ]
+      },
+      "resources": {
+        "title": "Ressurser",
+        "downloadCV": "Last ned CV",
+        "viewLicences": "Se Lisenser"
+      },
+      "connect": {
+        "title": "Koble til",
+        "socialLinks": [
+          {
+            "name": "LinkedIn"
+          },
+          {
+            "name": "GitHub"
+          },
+          {
+            "name": "Telefon"
+          },
+          {
+            "name": "WhatsApp"
+          }
+        ]
+      },
+      "location": {
+        "title": "Sted",
+        "mapTitle": "Kontorplassering"
+      },
+      "meeting": {
+        "title": "Avtal et Møte",
+        "calendarTitle": "Bestill Møte"
+      }
+    }
+  }
+}
