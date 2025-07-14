@@ -9,7 +9,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import "../scss/contact.scss";
-import content from "../../locales/no.json";
+import content from "../../locales/en.json";
 
 const Contact = () => {
   const { contact } = content;

@@ -33,7 +33,7 @@ export const metadata = {
 
   openGraph: {
     type: "website",
-    locale: "no_NO",
+    locale: "en_US",
     url: "https://sitedesign.no",
     title: "SiteDesign - Professional Web Development",
     description:
@@ -72,7 +72,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="no">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -1,5 +1,5 @@
 import "../scss/career.scss";
-import content from "../../locales/no.json";
+import content from "../../locales/en.json";
 
 export default function Career() {
   const { career } = content;
