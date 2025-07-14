@@ -31,8 +31,8 @@ export default function SideBar({ currentSection }) {
         ))}
       </ul>
       <div>
-        <a href="https://sitedesign.no/" className="lang">
-          En
+        <a href="https://en.sitedesign.no/" className="lang">
+          No
         </a>
       </div>
     </nav>
