@@ -1,5 +1,6 @@
 import "../scss/career.scss";
-import content from "../../locales/no.json";
+import langdata from "../../../language.json";
+const content = await import(`../../locales/${langdata.lang}.json`);
 
 export default function Career() {
   const { career } = content;

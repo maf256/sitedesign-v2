@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 
+import langdata from "../../language.json";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,7 +34,7 @@ export const metadata = {
 
   openGraph: {
     type: "website",
-    locale: "no_NO",
+    locale: langdata.locale,
     url: "https://sitedesign.no",
     title: "SiteDesign - Professional Web Development",
     description:
@@ -72,7 +73,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="no">
+    <html lang={langdata.lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

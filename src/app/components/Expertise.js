@@ -1,6 +1,7 @@
 import "../scss/expertise.scss";
 import { Code, Database, Users, Settings } from "lucide-react";
-import content from "../../locales/en.json";
+import langdata from "../../../language.json";
+const content = await import(`../../locales/${langdata.lang}.json`);
 
 export default function Expertise() {
   const { expertise } = content;

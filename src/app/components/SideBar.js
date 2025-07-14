@@ -1,4 +1,5 @@
 import "../scss/sideBar.scss";
+import langdata from "../../../language.json";
 
 export default function SideBar({ currentSection }) {
   const sections = ["top", "about", "expertise", "career", "contact"];
@@ -32,7 +33,7 @@ export default function SideBar({ currentSection }) {
       </ul>
       <div>
         <a href="https://en.sitedesign.no/" className="lang">
-          No
+          {langdata.lang == "en" ? "EN" : "NO"}
         </a>
       </div>
     </nav>

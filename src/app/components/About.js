@@ -1,5 +1,6 @@
 import "../scss/aboutMe.scss";
-import content from "../../locales/en.json";
+import langdata from "../../../language.json";
+const content = await import(`../../locales/${langdata.lang}.json`);
 
 export default function AboutMe() {
   const { aboutMe } = content;

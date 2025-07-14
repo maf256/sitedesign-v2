@@ -9,7 +9,8 @@ import {
   MessageCircle,
 } from "lucide-react";
 import "../scss/contact.scss";
-import content from "../../locales/en.json";
+import langdata from "../../../language.json";
+const content = await import(`../../locales/${langdata.lang}.json`);
 
 const Contact = () => {
   const { contact } = content;

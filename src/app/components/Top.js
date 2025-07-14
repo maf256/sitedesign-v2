@@ -1,7 +1,8 @@
 import Image from "next/image";
 import "../scss/top.scss";
 import { useState, useEffect } from "react";
-import content from "../../locales/no.json";
+import langdata from "../../../language.json";
+const content = await import(`../../locales/${langdata.lang}.json`);
 
 export default function LandingSection({ scrollProgress = 0 }) {
   const [chevronOpacity, setChevronOpacity] = useState(1);
