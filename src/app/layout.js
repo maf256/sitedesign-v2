@@ -65,7 +65,7 @@ export const metadata = {
     canonical: "https://sitedesign.no",
     languages: {
       "en-US": "https://en.sitedesign.no",
-      "no-NO": "https://no.sitedesign.no",
+      "no-NO": "https://sitedesign.no",
     },
   },
 };

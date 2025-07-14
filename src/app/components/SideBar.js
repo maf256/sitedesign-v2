@@ -30,6 +30,11 @@ export default function SideBar({ currentSection }) {
           </li>
         ))}
       </ul>
+      <div>
+        <a href="https://en.sitedesign.no/" className="lang">
+          EN
+        </a>
+      </div>
     </nav>
   );
 }

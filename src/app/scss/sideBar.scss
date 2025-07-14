@@ -9,21 +9,22 @@ nav {
   justify-items: center;
   align-items: center;
   align-self: center;
+  position: relative;
 }
-.section-name{
+.section-name {
   font-size: 0px;
   opacity: 0;
   transition: ease-in-out 0.618s;
 }
 nav:hover {
   width: $xxxxl * 1.618;
-  .section-name{
+  .section-name {
     transition: ease-in-out 0.618s;
     font-size: $s;
     opacity: 1;
   }
-  li{
-    width:100%;
+  li {
+    width: 100%;
     padding: $xs/1.68;
   }
   a {
@@ -61,21 +62,34 @@ nav ul {
     }
   }
   li:hover {
-    opacity: 0.90;
+    opacity: 0.9;
     transition: 0.618s;
     padding-left: $m;
   }
 }
 a {
+  color: $white;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: ease-in-out 0.618s;
+  span {
     color: $white;
-    text-decoration: none;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    font-size: $s;
     transition: ease-in-out 0.618s;
-    span {
-        color: $white;
-        font-size: $s;
-        transition: ease-in-out 0.618s;
-    }
+  }
 }
+
+.lang {
+  position: absolute;
+  bottom: $l;
+  left: 33px;
+  font-size: $s;
+  color: gray;
+}
+.lang:hover {
+  color: white;
+  cursor: pointer;
+}
+
