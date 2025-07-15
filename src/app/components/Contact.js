@@ -145,22 +145,6 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact__section contact__map-section">
-            <h3>{contact.sections.location.title}</h3>
-            <div className="contact__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1878318604277!2d10.50676427741654!3d59.89583186554648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641136be2073181%3A0x2754650120eec23f!2sOsloWeb%20Webdesign%20%26%20Seo!5e0!3m2!1sen!2sno!4v1687637397889!5m2!1sen!2sno"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={contact.sections.location.mapTitle}
-              ></iframe>
-            </div>
-          </div>
-
           <div className="contact__section contact__booking-section">
             <h3>{contact.sections.meeting.title}</h3>
             <div className="contact__calendar">

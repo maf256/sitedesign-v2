@@ -17,7 +17,8 @@
     "title": "Om Meg",
     "paragraph": "Jeg er en erfaren webutvikler som liker innovative og brukervennlige nettsider. Jeg jobber med både front-end og back-end. Jeg lager moderne, responsive nettsider som engasjerer besøkende og styrker den digitale profilen til din bedrift.",
     "personalDetails": [
-      "Jeg er 41 år gammel",
+      "Jeg er 42 år gammel",
+      "Jeg bygger ting for internett!",
       "Jeg liker å utforske ny teknologi",
       "På fritiden liker jeg å spille fotball"
     ],
@@ -169,7 +170,7 @@
         "personalInfo": [
           {
             "label": "Alder",
-            "value": "41"
+            "value": "42"
           },
           {
             "label": "Nasjonalitet",
