@@ -1,4 +1,11 @@
 {
+  "navigation": {
+    "top": "Hjem",
+    "about": "Om",
+    "expertise": "Kompetanse",
+    "career": "Karriere",
+    "contact": "Kontakt"
+  },
   "landingSection": {
     "description": {
       "role1": "Programvareutvikler",

@@ -1,8 +1,11 @@
 import "../scss/sideBar.scss";
 import langdata from "../../../language.json";
 
+const content = await import(`../../locales/${langdata.lang}.json`);
+
 export default function SideBar({ currentSection }) {
   const sections = ["top", "about", "expertise", "career", "contact"];
+  const { navigation } = content;
 
   return (
     <nav>
@@ -22,11 +25,7 @@ export default function SideBar({ currentSection }) {
                 }
               }}
             >
-              {" "}
-              |
-              <span className="section-name">
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </span>
+              |<span className="section-name">{navigation[section]}</span>
             </a>
           </li>
         ))}
